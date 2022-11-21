@@ -1,0 +1,68 @@
+/** General **/
+* {
+    box-sizing: border-box; 
+}
+
+:root {     
+  --color-text-base: #fff;
+  --color-lime-500: #E4FE08;
+  --color-lime-700: #B6CB06;
+}
+
+body {
+    margin: 0;		
+    padding: 0;
+    background-image: url("../img/background-calm-sea.svg");		
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font: 400 16px/1.25 Poppins, Helvetica, Arial, sans-serif;		
+    color: var(--color-text-base);		
+}
+
+h1 {
+    font-size: 4em;			
+    margin: 0.5em 0;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+h1 > em {	
+    color: var(--color-lime-500);
+    font-style: normal;
+}
+
+a {
+    color: var(--color-lime-500);		
+}
+a:hover {
+    color: var(--color-lime-700);
+}
+
+/** Container **/
+.wrapper {		
+    max-width: var(--bp-max);
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex-container > div {
+    width: 50%;
+    margin: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container > div {
+        width: 100%;
+    }
+}
